@@ -1,0 +1,112 @@
+/**index.wxss**/
+view{
+  text-align: center;
+  view:30rpx;
+}
+.userinfo {
+  width:100%;
+  height: 90rpx;
+}
+
+.userinfo-avatar {
+  width: 70rpx;
+  height: 70rpx;
+  margin: 5rpx;
+  border-radius: 50%;
+  float:left;
+}
+
+.userinfo-nickname {
+  color: #000;
+  float:left;
+  margin-top:20rpx;
+}
+
+#now{
+  position: relative;
+  width: 100%;
+	height: 900rpx;
+  	background:linear-gradient(#3FBDFF,#48E4FF);
+  /* 背景填充渐变色 */
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom center;
+}
+.now_back{
+  width:100%;
+  height:200rpx;
+  position: absolute;
+  bottom:0;
+  right:0;
+
+}
+.now_city{
+	color: #fff;
+	text-align: center;
+	line-height: 1.57rem;
+}
+.rrr{
+  float:right;
+  margin-right:10rpx;
+}
+.now_air{
+  width: 160rpx;
+	height: 120rpx;
+	margin-left: 0.26rem;
+	margin-top: 10rpm;
+	background-color: #F1AB62;
+	border-radius: 0.25rem;
+	padding-top: 0.15rem;
+	text-align: center;
+	color:#fff;
+	font-size:.4rem;
+}
+.now_temp{
+	color: #fff;
+	text-align: center; 
+}
+.now_weather{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+
+
+
+#towdays{
+	width: 100%;
+	height: 400rpx;
+	background-color: #fff;
+	border-bottom: 2rpx solid #E4E4E4;
+	/* padding: 20rpx 30rpx; */
+}
+.towdays_hezi{
+	width: 50%;
+	height: 100%;
+	float: left;
+	/* padding: 0 10rpx; */
+}
+.today{
+	/* border-right: 5rpx solid #E4E4E4; */
+}
+.towday_top{
+	width: 100%;	
+	height: 50%;	
+}
+.towdays_date{
+	float: left;
+}
+.towdays_img{
+    width: 0.72rem;
+    height: 0.72rem;
+    float: right;
+}
+.towday_top p{
+	float: right;
+}
+.towdays_img image{
+	width: 50rpx;	
+	height: 50rpx;
+	float: right;	
+}

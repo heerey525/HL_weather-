@@ -1,0 +1,74 @@
+<!-- index.wxml--> 
+<view class="page1">
+<!-- 当前信息 -->
+  <view id='now'>
+    <image class="now_back" src="../../image/screen.png"></image>
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+    <!-- 当前城市 -->
+    <view class="now_city">
+      <span class="address">当前地址：</span>
+      <span class="now_city_name" style="font-size:50rpx;">北京</span>
+      <view class="rrr">搜索</view>
+    </view>
+    <!-- 当前空气质量 -->
+    <view class="now_air">
+      <text style="margin-bottom:20rpx;font-size:38rpx;">空气</text>
+      <view style="margin-bottom:10rpx;font-size:38rpx;">you</view>
+    </view>
+    <!-- 当前天气 -->
+    <view class='now_weather'>
+      <image style="width: 150rpx;height: 150rpx;margin:auto;" src="../../image/cond-icon/100.png"></image>
+    </view>
+    <view style="margin:20rpx 0;">qing</view>
+    <br></br>
+     <!-- 当前温度 -->
+    <view class='now_temp'>
+      <text>37</text>°
+    </view>
+    <!-- 当前风向和等级 -->
+    <view class='now_wind'>
+      <text id="nowwind">西北</text>
+      <text id="nowwindji">12</text>级
+    </view>
+    <view class='now_prompt'>
+      <text>舒适度指数：<span>asda</span></text>
+    </view>
+  </view>
+
+  <view id="towdays">
+    <view class="towdays_hezi today">
+            <view class="towday_top">
+                <span class="towdays_date">今天</span>
+                <p>
+                    <span class="today_hightemp"></span>/
+                    <span class="today_lowtemp"></span>°C
+                </p>
+            </view>
+            <view class="towday_top">
+                <span class="towdays_date towdays_date2"></span>
+                <span class="towdays_img" id="day_img"><image src="" alt=""></image></span>
+            </view>
+        </view>
+        <view class="towdays_hezi tomorrow">
+            <view class="towday_top">
+                <span class="towdays_date">明天</span>
+                <p>
+                    <span class="today_hightemp tomorrow_hightemp"></span>/
+                    <span class="today_lowtemp tomorrow_lowtemp"></span>°C
+                </p>
+            </view>
+            <view class="towday_top">
+                <span class="towdays_date towdays_date1"></span>
+                <span class="towdays_img " id="towday_img"><image src="" alt=""></image></span>
+            </view>
+        </view>
+  </view>
+  
+</view>
+
